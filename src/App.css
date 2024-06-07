@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+.ant-btn-primary {
+  background-color: #4096ff;
+}
+.ant-btn-primary:hover {
+  background-color: #0462d3;
+}
+.ant-modal-close {
+  display: none;
+}
