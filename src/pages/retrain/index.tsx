@@ -106,7 +106,7 @@ const RetrainPage = () => {
       <div className="flex-1 bg-slate-100 h-full">
         <div className="flex justify-between p-4">
           <Select
-            className="w-[20%]"
+            className="w-[40%]"
             onChange={handldChangeOption}
             defaultValue={options.length > 0 ? options[0].value : undefined}
             options={options}
