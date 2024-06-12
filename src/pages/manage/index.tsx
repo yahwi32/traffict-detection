@@ -179,7 +179,15 @@ const ManagePage = () => {
                 <div className="text-left mt-6">
                   <h4 className="font-semibold text-2xl italic">Vehicle Information</h4>
                   <div className="mt-4 gap-2 flex flex-wrap justify-between">
-                    <VehicleInfor className="w-[30%]" title="License" value={chooseImage.license_fixed} />
+                    <VehicleInfor
+                      className="w-[30%]"
+                      title="License"
+                      value={chooseImage.license_fixed}
+                      image={`${process.env.REACT_APP_API_ENDPOINT}/media/${chooseImage.image_detect}`}
+                      chooseImage={chooseImage}
+                      fetchData={fetchData}
+                      setChooseImage={setChooseImage}
+                    />
                     <VehicleInfor className="w-[30%]" title="Time" value={chooseImage.time} />
                     <VehicleInfor className="w-[30%]" title="Location" value={chooseImage.location} />
                     <VehicleInfor className="w-[30%]" title="Color" value={'No'} />

@@ -57,6 +57,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (context.user.username === APP_CONFIG.username && context.user.password === APP_CONFIG.password) {
+      localStorage.setItem('traffict-user', context.user.username);
       setIsOpenModal(false);
     } else {
       setIsOpenModal(true);

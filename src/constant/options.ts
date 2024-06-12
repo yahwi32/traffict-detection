@@ -2,6 +2,7 @@ import { IconType } from 'react-icons';
 import { IoIosSearch } from 'react-icons/io';
 import { MdManageSearch } from 'react-icons/md';
 import { VscDeviceCameraVideo } from 'react-icons/vsc';
+import { IoReloadCircleOutline } from 'react-icons/io5';
 interface OptionInterface {
   id: number;
   label: string;
@@ -33,6 +34,12 @@ const sideBar: SidebarType[] = [
     label: 'Search',
     url: '/search',
     icon: IoIosSearch,
+  },
+  {
+    id: 4,
+    label: 'Retrain',
+    url: '/retrain',
+    icon: IoReloadCircleOutline,
   },
 ];
 const options: OptionInterface[] = [

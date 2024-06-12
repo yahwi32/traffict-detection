@@ -5,6 +5,7 @@ import { HomePage, ManagePage, SearchPage } from './pages';
 import Layout from './layout';
 import { UserType } from './type';
 import { Toaster } from 'react-hot-toast';
+import RetrainPage from './pages/retrain';
 
 export const APP_CONTEXT = createContext<{
   address?: string;
@@ -36,6 +37,7 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="manage" element={<ManagePage />} />
             <Route path="search" element={<SearchPage />} />
+            <Route path="retrain" element={<RetrainPage />} />
           </Route>
         </Routes>
       </div>
